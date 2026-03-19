@@ -1,0 +1,5 @@
+db_data/
+wp-admin/
+wp-includes/
+*.php
+!wp-content/
