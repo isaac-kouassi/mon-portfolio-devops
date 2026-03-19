@@ -1,0 +1,15 @@
+name: Mon Robot de Verification Portfolio
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recupérer le code
+        uses: actions/checkout@v4
+
+      - name: Verifier que Docker fonctionne
+        run: docker-compose config
